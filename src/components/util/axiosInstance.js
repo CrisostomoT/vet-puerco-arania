@@ -4,7 +4,7 @@ const headers = authToken
   ? { headers: { Authorization: `Bearer ${authToken}` } }
   : {};
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://vet-puerco-arania-backend.herokuapp.com/api",
   ...headers,
 });
 export default axiosInstance;
